@@ -5,7 +5,14 @@ import pluginVue from 'eslint-plugin-vue';
 import eslintConfigPrettier from 'eslint-config-prettier';
 
 export default [
-  { languageOptions: { globals: globals.browser } },
+  {
+    ignores: ['dist/**'],
+  },
+  {
+    languageOptions: {
+      globals: globals.browser,
+    },
+  },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   ...pluginVue.configs['flat/essential'],
