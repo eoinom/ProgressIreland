@@ -37,6 +37,7 @@
     "@storybook/vue3": "^8.0.9",
     "@storybook/vue3-vite": "^8.0.9",
     "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-vue": "^9.25.0",
     "globals": "^15.1.0",
     "prettier": "3.2.5",
