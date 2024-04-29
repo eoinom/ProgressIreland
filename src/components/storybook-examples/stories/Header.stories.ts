@@ -9,7 +9,7 @@ const meta = {
    * to learn how to generate automatic titles
    */
   title: 'Example/Header',
-  component: MyHeader,
+  component: MyHeader as Record<keyof typeof MyHeader, unknown>,
   render: (args: any) => ({
     components: { MyHeader },
     setup() {
@@ -28,7 +28,7 @@ const meta = {
   },
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
-} satisfies Meta<typeof MyHeader>;
+} satisfies Meta<typeof MyHeader & typeof fn>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

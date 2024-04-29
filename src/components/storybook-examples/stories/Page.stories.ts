@@ -4,7 +4,7 @@ import MyPage from './Page.vue';
 
 const meta = {
   title: 'Example/Page',
-  component: MyPage,
+  component: MyPage as Record<keyof typeof MyPage, unknown>,
   render: () => ({
     components: { MyPage },
     template: '<my-page />',
