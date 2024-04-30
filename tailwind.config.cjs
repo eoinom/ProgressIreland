@@ -4,6 +4,27 @@ module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {},
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      green: {
+        bright: 'rgba(143, 183, 52, 1)',
+        light: 'rgba(199, 219, 153, 1)',
+      },
+      yellow: {
+        bright: 'rgba(255, 198, 51, 1)',
+        light: 'rgba(255, 227, 153, 1)',
+      },
+      blue: {
+        bright: 'rgba(91, 192, 235, 1)',
+      },
+      charcoal: {
+        bright: 'rgba(85, 85, 85, 1)',
+        light: 'rgba(170, 170, 170, 1)',
+        lighter: 'rgba(212, 212, 212, 1)',
+        lightest: 'rgba(250, 250, 250, 1)',
+      },
+    },
     fontSize: {
       [`${prefix}heading-1`]: [
         '100px',
