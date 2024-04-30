@@ -148,6 +148,12 @@ module.exports = {
         },
       ],
     },
+    screens: {
+      sm: '460px',
+      md: '768px',
+      lg: '950px',
+      xl: '1200px',
+    },
   },
   plugins: [],
 };
