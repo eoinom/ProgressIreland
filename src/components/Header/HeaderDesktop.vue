@@ -1,0 +1,33 @@
+<template>
+  <header class="bg-charcoal-lightest p-5">
+    <div class="flex items-center justify-between">
+      <img
+        src="/progress-ireland-logo.svg"
+        alt="Progress Ireland Logo"
+        class="h-[41px]"
+      />
+
+      <nav>
+        <ul class="flex">
+          <li v-for="link in props.links" :key="link.text">
+            <a :href="link.url" class="text-pi-body-5-bold px-2 py-1">
+              {{ link.text }}
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</template>
+
+<script setup lang="ts">
+import { type PropType, defineProps } from 'vue';
+import type { HeaderLink } from './headerLinks';
+
+const props = defineProps({
+  links: {
+    type: Array as PropType<HeaderLink[]>,
+    required: true,
+  },
+});
+</script>
