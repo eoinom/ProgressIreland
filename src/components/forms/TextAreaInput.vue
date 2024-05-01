@@ -10,7 +10,7 @@
         ($event.target as HTMLTextAreaElement)?.value ?? '',
       )
     "
-    class="w-full border-b border-charcoal-bright focus:outline-none placeholder-charcoal-bright placeholder:text-pi-body-3-bold text-charcoal-bright text-pi-body-3-bold text-left text resize-none"
+    class="w-full bg-transparent border-b border-charcoal-bright focus:outline-none placeholder-charcoal-bright placeholder:text-pi-body-3-bold text-charcoal-bright text-pi-body-3-bold text-left text resize-none"
   />
 </template>
 
