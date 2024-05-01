@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import { type PropType, defineProps } from 'vue';
+import type { PropType } from 'vue';
 import type { HeaderLink } from './headerLinks';
 
 const props = defineProps({
