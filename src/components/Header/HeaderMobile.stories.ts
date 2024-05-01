@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
-import Header from './HeaderDesktop.vue';
+import Header from './HeaderMobile.vue';
 import { headerLinks } from './headerLinks';
 
 const meta = {
-  title: 'Header/HeaderDesktop',
+  title: 'Header/HeaderMobile',
   component: Header as Record<keyof typeof Header, unknown>,
   parameters: {
     layout: 'fullscreen',
