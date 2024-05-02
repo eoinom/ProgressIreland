@@ -37,9 +37,13 @@
         <form class="flex flex-col w-full mb-[75px] lg:mb-0">
           <div class="flex flex-col lg:flex-row gap-x-5">
             <TextInput type="text" placeholder="Name" />
-            <TextInput type="email" placeholder="E-mail Address" />
+            <TextInput
+              type="email"
+              placeholder="E-mail Address"
+              class="mt-[20px] lg:mt-0"
+            />
           </div>
-          <TextAreaInput placeholder="Message" :rows="3" />
+          <TextAreaInput placeholder="Message" :rows="3" class="mt-[15px]" />
           <Button label="Submit" class="w-fit" />
         </form>
       </div>
