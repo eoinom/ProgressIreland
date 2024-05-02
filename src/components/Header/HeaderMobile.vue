@@ -1,13 +1,13 @@
 <template>
   <header
-    class="bg-charcoal-lightest p-[10px]"
+    class="bg-charcoal-lightest p-pi-10"
     :class="isMenuOpen ? 'h-screen' : 'h-auto'"
   >
     <div class="flex items-center justify-between z-50">
       <img
         src="/progress-ireland-logo.svg"
         alt="Progress Ireland Logo"
-        class="h-[35px]"
+        class="h-pi-35"
       />
 
       <img
@@ -22,7 +22,7 @@
         v-show="isMenuOpen"
         src="close-icon.svg"
         alt="Navigation menu"
-        class="h-[35px] z-50"
+        class="h-pi-35 z-50"
         @click.stop="isMenuOpen = false"
       />
     </div>

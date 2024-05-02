@@ -1,49 +1,49 @@
 <template>
-  <footer class="bg-blue-bright p-[10px] lg:p-5">
+  <footer class="bg-blue-bright p-pi-10 lg:p-5">
     <div
       class="flex flex-col lg:flex-row lg:items-center lg:justify-between mt-[103px] lg:mt-[367px] mb-4 lg:mb-52"
     >
       <div class="flex flex-col w-full lg:w-1/2 mb-10 lg:mb-0">
         <h3
-          class="text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright pb-[10px] lg:pb-[15px]"
+          class="text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright pb-pi-10 lg:pb-pi-15"
         >
           Stay tuned in
         </h3>
         <a
           href="mailto:hello@progressireland.org"
-          class="text-pi-body-3-bold lg:text-pi-body-1 text-charcoal-bright pb-[5px] lg:pb-[10px]"
+          class="text-pi-body-3-bold lg:text-pi-body-1 text-charcoal-bright pb-pi-5 lg:pb-pi-10"
           >hello@progressireland.org</a
         >
         <span
-          class="text-pi-body-3-bold lg:text-pi-body-1 text-charcoal-bright pb-[5px] lg:pb-[10px]"
+          class="text-pi-body-3-bold lg:text-pi-body-1 text-charcoal-bright pb-pi-5 lg:pb-pi-10"
           >X (Formerly Twitter)</span
         >
         <span
-          class="text-pi-body-3-bold lg:text-pi-body-1 text-charcoal-bright pb-[5px] lg:pb-[10px]"
+          class="text-pi-body-3-bold lg:text-pi-body-1 text-charcoal-bright pb-pi-5 lg:pb-pi-10"
           >@ProgressIreland</span
         >
         <span
-          class="text-pi-body-3-bold lg:text-pi-body-1 text-charcoal-bright pb-[5px] lg:pb-[10px]"
+          class="text-pi-body-3-bold lg:text-pi-body-1 text-charcoal-bright pb-pi-5 lg:pb-pi-10"
           >LinkedIn/Progress Ireland</span
         >
       </div>
 
       <div class="flex flex-col w-full lg:w-1/2">
         <h3
-          class="text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright mb-[10px] lg:mb-7"
+          class="text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright mb-pi-10 lg:mb-7"
         >
           Get in touch with us
         </h3>
-        <form class="flex flex-col w-full mb-[75px] lg:mb-0">
+        <form class="flex flex-col w-full mb-pi-75 lg:mb-0">
           <div class="flex flex-col lg:flex-row gap-x-5">
             <TextInput type="text" placeholder="Name" />
             <TextInput
               type="email"
               placeholder="E-mail Address"
-              class="mt-[20px] lg:mt-0"
+              class="mt-pi-20 lg:mt-0"
             />
           </div>
-          <TextAreaInput placeholder="Message" :rows="3" class="mt-[15px]" />
+          <TextAreaInput placeholder="Message" :rows="3" class="mt-pi-15" />
           <Button label="Submit" class="w-fit" />
         </form>
       </div>
@@ -53,7 +53,7 @@
       <img
         src="/progress-ireland-logo.svg"
         alt="Progress Ireland Logo"
-        class="h-[35px] self-start mb-[10px] lg:mb-0"
+        class="h-pi-35 self-start mb-pi-10 lg:mb-0"
       />
       <div class="flex justify-between lg:space-x-2">
         <a
