@@ -92,7 +92,34 @@ export const MissionStatement: Story = {
   },
 };
 
-export const MeetOurTeam: Story = {
+export const MissionStatementWithActualContent: Story = {
+  args: {
+    title: 'Mission Statement',
+  },
+  parameters: {
+    layout: 'padded',
+    slots: {
+      leftColumn: {
+        template: `
+        <h3 class="text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright lg:max-w-[620px]">
+        Building Irish capacity for the next stage of growth.
+        </h3>
+        `,
+      },
+      rightColumn: {
+        template: `
+        <div class="w-full">
+          <p class="text-pi-body-3-light text-charcoal-bright">
+          Ireland has enjoyed huge economic success in the past few decades. But the housing crisis and high infrastructure costs fuel worries about our international competitiveness. Progress Ireland exists to bring best-in-class policy solutions to the Irish sphere. We will share new ideas to help Ireland reach the next stage of growth.
+          </p>
+        </div>
+        `,
+      },
+    },
+  },
+};
+
+export const MeetOurTeamWithActualContent: Story = {
   args: {
     title: 'Our Staff',
   },
@@ -101,21 +128,18 @@ export const MeetOurTeam: Story = {
     slots: {
       leftColumn: {
         template: `
-        <h3 class="text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright mb-pi-15 lg:mb-pb-10">
+        <h3 class="text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright">
           Meet our team.
         </h3>
-        <p class="text-pi-body-3-bold text-charcoal-bright lg:max-w-[572px]">
-          The Metropolitan Abundance Project was born at California YIMBY and is expanding nationwide. Scroll down for career opportunities!
-        </p>
         `,
       },
       rightColumn: {
         components: { Job },
         template: `
-        <Job title="Head of Science & Innovation Research" :attributes="['Dublin', 'Hybrid', 'Full Time']" />
-        <Job title="Housing Research Associate" :attributes="['Dublin', 'Remote only', 'Full Time']" />
-        <Job title="Research Fellow" :attributes="['Dublin', 'Hybrid', 'Full Time']" />
-        <Job title="Office Manager" :attributes="['Dublin', 'Office based', 'Full Time']" />
+        <Job title="Sean Keyes (Executive Director)" />
+        <Job title="Sean McPartlin (Director of Housing Policy)" />
+        <Job title="Luke Fehily (Director of Science and Innovation Policy)" />
+        <Job title="Fergus McCullough (Director of Operations)" />
         `,
       },
     },
@@ -143,6 +167,34 @@ export const Opportunities: Story = {
         <Job title="Housing Research Associate" :attributes="['Dublin', 'Remote only', 'Full Time']" />
         <Job title="Research Fellow" :attributes="['Dublin', 'Hybrid', 'Full Time']" />
         <Job title="Office Manager" :attributes="['Dublin', 'Office based', 'Full Time']" />
+        `,
+      },
+    },
+  },
+};
+
+export const OpportunitiesWithActualContent: Story = {
+  args: {
+    title: 'Opportunities',
+  },
+  parameters: {
+    layout: 'padded',
+    slots: {
+      leftColumn: {
+        template: `
+        <h3 class="text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright lg:max-w-[572px] mb-pi-15 lg:mb-pb-10">
+          We're always on the lookout for talented policy experts to join our team.
+        </h3>
+        <p class="text-pi-body-3-bold text-charcoal-bright lg:max-w-[572px]">
+          Click on the open roles or reach us at <a href="mailto:jobs@progressireland.org">jobs@progressireland.org.</a>
+        </p>
+        `,
+      },
+      rightColumn: {
+        components: { Job },
+        template: `
+        <Job title="Senior Economist" :attributes="['Dublin', 'Hybrid', 'Full Time']" />
+        <Job title="Design your own role" :attributes="['Dublin', 'Hybrid', 'Full Time']" />
         `,
       },
     },

@@ -4,7 +4,6 @@
     :class="bgColourClass[bgColour]"
   >
     <div
-      v-if="attributes.length > 0"
       class="flex w-full lg:w-1/2 justify-between place-self-end mb-pi-10 lg:mb-pi-15"
     >
       <span
