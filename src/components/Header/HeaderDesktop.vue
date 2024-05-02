@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-charcoal-lightest p-5">
+  <header class="bg-charcoal-lightest p-pi-20">
     <div class="flex items-center justify-between">
       <img
         src="/progress-ireland-logo.svg"

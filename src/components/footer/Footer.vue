@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-blue-bright p-pi-10 lg:p-5">
+  <footer class="bg-blue-bright p-pi-10 lg:p-pi-20">
     <div
       class="flex flex-col lg:flex-row lg:items-center lg:justify-between mt-[103px] lg:mt-[367px] mb-4 lg:mb-52"
     >
