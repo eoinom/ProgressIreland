@@ -51,4 +51,3 @@ defineProps({
   },
 });
 </script>
-../../types/coloursEnum
