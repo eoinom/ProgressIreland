@@ -3,7 +3,7 @@ import Header from './HeaderDesktop.vue';
 import { headerLinks } from './headerLinks';
 
 const meta = {
-  title: 'Header/HeaderDesktop',
+  title: 'layout/Header - Desktop',
   component: Header as Record<keyof typeof Header, unknown>,
   parameters: {
     layout: 'fullscreen',

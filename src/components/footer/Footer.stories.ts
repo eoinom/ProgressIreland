@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import Footer from './Footer.vue';
 
 const meta = {
-  title: 'Footer',
+  title: 'layout/Footer',
   component: Footer as Record<keyof typeof Footer, unknown>,
   parameters: {
     layout: 'fullscreen',
