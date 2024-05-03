@@ -43,7 +43,7 @@
     "globals": "^15.1.0",
     "prettier": "3.2.5",
     "storybook": "^8.0.9",
-    "storybook-addon-vue-slots": "^0.9.29",
+    "storybook-addon-vue-slots": "^0.9.30-next.2",
     "typescript-eslint": "^7.8.0"
   }
 }
