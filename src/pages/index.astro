@@ -1,24 +1,89 @@
 ---
-// Component Imports
-import Button from '../components/Button.astro';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+import Layout from '../layouts/Layout.astro';
+import Job from '../components/content/Job.vue';
+import SectionTwoColumn from '../components/content/SectionTwoColumn.vue';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
+<Layout title='Progress Ireland'>
+  <SectionTwoColumn
+    id='our-mission'
+    title='Mission Statement'
+  >
+    <div slot='leftColumn'>
+      <h3
+        class='text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright lg:max-w-[620px]'
+      >
+        Building Irish capacity for the next stage of growth.
+      </h3>
+    </div>
+    <div slot='rightColumn'>
+      <div class='w-full'>
+        <p class='text-pi-body-3-light text-charcoal-bright'>
+          Ireland has enjoyed huge economic success in the past few decades. But
+          the housing crisis and high infrastructure costs fuel worries about
+          our international competitiveness. Progress Ireland exists to bring
+          best-in-class policy solutions to the Irish sphere. We will share new
+          ideas to help Ireland reach the next stage of growth.
+        </p>
+      </div>
+    </div>
+  </SectionTwoColumn>
 
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
-	</body>
-</html>
+  <SectionTwoColumn
+    id='team'
+    title='Our Staff'
+  >
+    <div slot='leftColumn'>
+      <h3 class='text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright'>
+        Meet our team.
+      </h3>
+    </div>
+    <div slot='rightColumn'>
+      <Job
+        client:load
+        title='Sean Keyes (Executive Director)'
+      />
+      <Job
+        client:load
+        title='Sean McPartlin (Director of Housing Policy)'
+      />
+      <Job
+        client:load
+        title='Luke Fehily (Director of Science and Innovation Policy)'
+      />
+      <Job
+        client:load
+        title='Fergus McCullough (Director of Operations)'
+      />
+    </div>
+  </SectionTwoColumn>
+
+  <SectionTwoColumn
+    id='opportunities'
+    title='Opportunities'
+  >
+    <div slot='leftColumn'>
+      <h3
+        class='text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright lg:max-w-[572px] mb-pi-15 lg:mb-pb-10'
+      >
+        We're always on the lookout for talented policy experts to join our
+        team.
+      </h3>
+      <p class='text-pi-body-3-bold text-charcoal-bright lg:max-w-[572px]'>
+        Click on the open roles or reach us at <a
+          href='mailto:jobs@progressireland.org'>jobs@progressireland.org.</a
+        >
+      </p>
+    </div>
+    <div slot='rightColumn'>
+      <Job
+        title='Senior Economist'
+        :attributes="['Dublin', 'Hybrid', 'Full Time']"
+      />
+      <Job
+        title='Design your own role'
+        :attributes="['Dublin', 'Hybrid', 'Full Time']"
+      />
+    </div>
+  </SectionTwoColumn>
+</Layout>

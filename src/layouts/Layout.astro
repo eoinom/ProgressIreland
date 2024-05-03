@@ -1,0 +1,47 @@
+---
+import Footer from '../components/footer/Footer.vue';
+import HeaderDesktop from '../components/header/HeaderDesktop.vue';
+import HeaderMobile from '../components/header/HeaderMobile.vue';
+import { headerLinks } from '../components/header/headerLinks.js';
+
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<html
+  lang='en'
+  class='scroll-smooth'
+>
+  <head>
+    <meta charset='utf-8' />
+    <meta
+      name='viewport'
+      content='width=device-width'
+    />
+    <link
+      rel='icon'
+      type='image/svg+xml'
+      href='/favicon.svg'
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <HeaderMobile
+      client:load
+      links={headerLinks}
+      class='lg:hidden'
+    />
+    <HeaderDesktop
+      client:load
+      links={headerLinks}
+      class='hidden lg:block'
+    />
+    <slot />
+    <Footer
+      id='contact'
+      client:load
+    />
+  </body>
+</html>
