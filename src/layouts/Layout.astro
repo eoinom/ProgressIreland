@@ -1,8 +1,8 @@
 ---
 import Footer from '@/components/footer/Footer.vue';
-import HeaderDesktop from '@/components/header/HeaderDesktop.vue';
-import HeaderMobile from '@/components/header/HeaderMobile.vue';
-import { headerLinks } from '@/components/header/headerLinks.js';
+// import HeaderDesktop from '@/components/header/HeaderDesktop.vue';
+// import HeaderMobile from '@/components/header/HeaderMobile.vue';
+// import { headerLinks } from '@/components/header/headerLinks.js';
 
 interface Props {
   title: string;
@@ -28,7 +28,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <HeaderMobile
+    <!-- <HeaderMobile
       client:load
       links={headerLinks}
       class='lg:hidden'
@@ -37,7 +37,7 @@ const { title } = Astro.props;
       client:load
       links={headerLinks}
       class='hidden lg:block'
-    />
+    /> -->
     <slot />
     <Footer
       id='contact'
