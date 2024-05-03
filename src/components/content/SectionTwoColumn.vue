@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col bg-charcoal-lightest p-pi-10 p-pb-50 lg:pt-pi-100 lg:px-pi-20"
+    class="flex flex-col bg-charcoal-lightest p-pi-10 pb-pi-50 lg:pt-pi-100 lg:px-pi-20"
   >
     <div
       class="w-full border-b border-charcoal-bright pb-pi-5 mb-pi-5 lg:mb-pi-20"
