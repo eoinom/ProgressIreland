@@ -31,6 +31,7 @@ const { title } = Astro.props;
     />
     <title>{title}</title>
   </head>
+
   <body>
     <HeaderMobile
       client:load
@@ -42,27 +43,7 @@ const { title } = Astro.props;
       links={headerLinks}
       class='hidden lg:block'
     />
-
-    <div class='bg-charcoal-lightest px-pi-10 lg:px-pi-20'>
-      <img
-        src='/hero-triangles-mbl.svg'
-        alt='Graphic with multiple coloured triangles'
-        class='sm:hidden w-full'
-      />
-      <img
-        src='/hero-triangles-tablet.svg'
-        alt='Graphic with multiple coloured triangles'
-        class='hidden sm:block lg:hidden w-full'
-      />
-      <img
-        src='/hero-triangles-desktop.svg'
-        alt='Graphic with multiple coloured triangles'
-        class='hidden lg:block w-full'
-      />
-    </div>
-
     <slot />
-
     <Footer
       id='contact'
       client:load

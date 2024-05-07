@@ -72,6 +72,13 @@ module.exports = {
           fontWeight: 400,
         },
       ],
+      [`${prefix}heading-4-large`]: [
+        '41px',
+        {
+          lineHeight: '41px',
+          fontWeight: 400,
+        },
+      ],
       [`${prefix}heading-4-bold`]: [
         '30px',
         {
