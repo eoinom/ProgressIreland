@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "start": "node ./dist/server/entry.mjs",
+    "start": "node server.mjs",
     "build": "astro build",
     "check-and-build": "astro check && astro build",
     "preview": "astro preview",
@@ -23,6 +23,7 @@
     "astro": "^4.7.0",
     "autoprefixer": "^10.4.15",
     "canvas-confetti": "^1.9.1",
+    "express": "^4.19.2",
     "postcss": "^8.4.28",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.4.5",
