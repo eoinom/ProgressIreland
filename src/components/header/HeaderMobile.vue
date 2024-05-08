@@ -1,7 +1,7 @@
 <template>
   <header
     class="bg-charcoal-lightest p-pi-10"
-    :class="isMenuOpen ? 'h-screen' : 'h-auto'"
+    :class="isMenuOpen ? 'fixed h-screen w-screen' : 'h-auto'"
   >
     <div class="flex items-center justify-between z-50">
       <img
@@ -30,9 +30,9 @@
     <nav v-show="isMenuOpen" class="fixed top-0 left-0 h-screen w-screen z-40">
       <ul class="h-full flex flex-col items-center justify-center">
         <li v-for="link in props.links" :key="link.text" class="px-4 py-2">
-          <a :href="link.url" class="text-pi-body-1">
+          <span @click="onLinkClick(link.url)" class="text-pi-body-1">
             {{ link.text }}
-          </a>
+          </span>
         </li>
       </ul>
     </nav>
@@ -40,7 +40,7 @@
 </template>
 
 <script setup lang="ts">
-import { type PropType, ref } from 'vue';
+import { type PropType, ref, watch, nextTick } from 'vue';
 import type { HeaderLink } from './headerLinks';
 
 const props = defineProps({
@@ -51,4 +51,21 @@ const props = defineProps({
 });
 
 const isMenuOpen = ref(false);
+
+watch(isMenuOpen, (isOpen) => {
+  if (isOpen) {
+    document.body.style.position = 'fixed'; // prevent scrolling
+  } else {
+    document.body.style.position = '';
+  }
+});
+
+const onLinkClick = async (url: string) => {
+  isMenuOpen.value = false;
+  const target = document.querySelector(url);
+  if (target) {
+    await nextTick();
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 </script>

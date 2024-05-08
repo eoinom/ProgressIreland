@@ -10,9 +10,12 @@
       <nav>
         <ul class="flex">
           <li v-for="link in props.links" :key="link.text">
-            <a :href="link.url" class="text-pi-body-5-bold px-2 py-1">
+            <span
+              @click="onLinkClick(link.url)"
+              class="text-pi-body-5-bold cursor-pointer px-2 py-1"
+            >
               {{ link.text }}
-            </a>
+            </span>
           </li>
         </ul>
       </nav>
@@ -21,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import type { PropType } from 'vue';
+import { type PropType } from 'vue';
 import type { HeaderLink } from './headerLinks';
 
 const props = defineProps({
@@ -30,4 +33,11 @@ const props = defineProps({
     required: true,
   },
 });
+
+const onLinkClick = (url: string) => {
+  const target = document.querySelector(url);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 </script>
