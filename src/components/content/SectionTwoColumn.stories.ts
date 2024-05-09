@@ -137,9 +137,35 @@ export const MeetOurTeamWithActualContent: Story = {
         components: { Job },
         template: `
         <Job title="Sean Keyes (Executive Director)" />
-        <Job title="Sean McPartlin (Director of Housing Policy)" />
+        <Job title="Seán O'Neill McPartlin (Director of Housing Policy)" />
         <Job title="Luke Fehily (Director of Science and Innovation Policy)" />
         <Job title="Fergus McCullough (Director of Operations)" />
+        `,
+      },
+    },
+  },
+};
+
+export const MeetOurBoardWithActualContent: Story = {
+  args: {
+    title: 'Our Board',
+  },
+  parameters: {
+    layout: 'padded',
+    slots: {
+      leftColumn: {
+        template: `
+        <h3 class="text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright">
+          Meet our board.
+        </h3>
+        `,
+      },
+      rightColumn: {
+        components: { Job },
+        template: `
+        <Job title="Fiona Cormican (Board Member)" />
+        <Job title="Donal de Buitleir (Board Member)" />
+        <Job title="TBC (Board Member)" />
         `,
       },
     },

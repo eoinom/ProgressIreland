@@ -14,7 +14,7 @@
           class="text-pi-body-3-bold lg:text-pi-body-1 text-charcoal-bright pb-pi-5 lg:pb-pi-10"
           >hello@progressireland.org</a
         >
-        <span
+        <!-- <span
           class="text-pi-body-3-bold lg:text-pi-body-1 text-charcoal-bright pb-pi-5 lg:pb-pi-10"
           >X (Formerly Twitter)</span
         >
@@ -25,7 +25,7 @@
         <span
           class="text-pi-body-3-bold lg:text-pi-body-1 text-charcoal-bright pb-pi-5 lg:pb-pi-10"
           >LinkedIn/Progress Ireland</span
-        >
+        > -->
       </div>
 
       <div class="flex flex-col w-full lg:w-1/2">
@@ -54,11 +54,6 @@
           href="/privacy-policy"
           class="text-pi-body-6-bold lg:text-pi-body-5-bold text-charcoal-bright"
           >Privacy Policy</a
-        >
-        <a
-          href="/#contact"
-          class="text-pi-body-6-bold lg:text-pi-body-5-bold text-charcoal-bright"
-          >Contact</a
         >
         <span
           class="text-pi-body-6-bold lg:text-pi-body-5-bold text-charcoal-bright"
