@@ -1,7 +1,11 @@
 <template>
-  <article
+  <component
+    :is="link ? 'a' : 'article'"
     class="flex flex-col border-y border-charcoal-light p-pi-10 lg:py-pi-20"
     :class="bgColourClass[bgColour]"
+    :href="link"
+    :target="link ? '_blank' : null"
+    :rel="link ? 'noopener noreferrer' : null"
   >
     <div
       class="flex w-full lg:w-1/2 justify-between place-self-end mb-pi-10 lg:mb-pi-15"
@@ -15,7 +19,7 @@
     <h3 class="text-pi-heading-5 lg:text-pi-heading-4 text-charcoal-bright">
       {{ title }}
     </h3>
-  </article>
+  </component>
 </template>
 
 <script setup lang="ts">
@@ -48,6 +52,10 @@ defineProps({
   bgColour: {
     type: Object as PropType<Colours>,
     default: Colours.Transparent,
+  },
+  link: {
+    type: String,
+    required: false,
   },
 });
 </script>
