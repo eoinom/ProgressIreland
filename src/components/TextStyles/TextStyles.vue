@@ -53,34 +53,34 @@ const defaultSampleText = 'The quick fox jumped over the lazy dog';
 const textStyles = [
   {
     token: 'H1',
-    class: 'text-pi-heading-1',
+    class: 'font-headings text-pi-heading-1',
     sample: 'The quick fox j...',
   },
   {
     token: 'H2',
-    class: 'text-pi-heading-2',
+    class: 'font-headings text-pi-heading-2',
     sample: 'The quick fox jumped o...',
   },
   {
     token: 'H3',
-    class: 'text-pi-heading-3',
+    class: 'font-headings text-pi-heading-3',
     sample: 'The quick fox jumped over t...',
   },
   {
     token: 'H4',
-    class: 'text-pi-heading-4-bold',
+    class: 'font-headings text-pi-heading-4-bold',
   },
   {
     token: 'H4-light',
-    class: 'text-pi-heading-4',
+    class: 'font-headings text-pi-heading-4',
   },
   {
     token: 'H5',
-    class: 'text-pi-heading-5-bold',
+    class: 'font-headings text-pi-heading-5-bold',
   },
   {
     token: 'H5-light',
-    class: 'text-pi-heading-5',
+    class: 'font-headings text-pi-heading-5',
   },
   {
     token: 'P1',

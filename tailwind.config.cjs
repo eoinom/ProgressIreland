@@ -50,6 +50,27 @@ module.exports = {
         lightest: 'rgba(250, 250, 250, 1)',
       },
     },
+    fontFamily: {
+      sans: [
+        'TWKLausanne',
+        'ui-sans-serif',
+        'system-ui',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Noto Color Emoji"',
+      ],
+      headings: [
+        '"Du Nord"',
+        'ui-serif',
+        'Georgia',
+        'Cambria',
+        '"Times New Roman"',
+        'Times',
+        'serif',
+      ],
+    },
     fontSize: {
       [`${prefix}heading-1`]: [
         '100px',

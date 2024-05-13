@@ -5,7 +5,7 @@
     >
       <div class="flex flex-col w-full lg:w-1/2 mb-10 lg:mb-0">
         <h3
-          class="text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright pb-pi-10 lg:pb-pi-15"
+          class="font-headings text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright pb-pi-10 lg:pb-pi-15"
         >
           Stay tuned in
         </h3>
@@ -30,7 +30,7 @@
 
       <div class="flex flex-col w-full lg:w-1/2">
         <h3
-          class="text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright mb-pi-10 lg:mb-7"
+          class="font-headings text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright mb-pi-10 lg:mb-7"
         >
           Get in touch with us
         </h3>

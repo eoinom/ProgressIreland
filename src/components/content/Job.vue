@@ -16,7 +16,9 @@
         >{{ attribute }}</span
       >
     </div>
-    <h3 class="text-pi-heading-5 lg:text-pi-heading-4 text-charcoal-bright">
+    <h3
+      class="font-headings text-pi-heading-5-bold lg:text-pi-heading-4-bold text-charcoal-bright"
+    >
       {{ title }}
     </h3>
   </component>

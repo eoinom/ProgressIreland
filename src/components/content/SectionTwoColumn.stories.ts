@@ -36,7 +36,7 @@ export const MissionStatement: Story = {
     slots: {
       leftColumn: {
         template: `
-        <h3 class="text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright lg:max-w-[620px]">
+        <h3 class="font-headings text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright lg:max-w-[620px]">
           Cities have long served as engines for prosperity, innovation, culture
           and mobility.
         </h3>
@@ -101,7 +101,7 @@ export const MissionStatementWithActualContent: Story = {
     slots: {
       leftColumn: {
         template: `
-        <h3 class="text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright lg:max-w-[620px]">
+        <h3 class="font-headings text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright lg:max-w-[620px]">
         Building Irish capacity for the next stage of growth.
         </h3>
         `,
@@ -128,7 +128,7 @@ export const MeetOurTeamWithActualContent: Story = {
     slots: {
       leftColumn: {
         template: `
-        <h3 class="text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright">
+        <h3 class="font-headings text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright">
           Meet our team.
         </h3>
         `,
@@ -155,7 +155,7 @@ export const MeetOurBoardWithActualContent: Story = {
     slots: {
       leftColumn: {
         template: `
-        <h3 class="text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright">
+        <h3 class="font-headings text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright">
           Meet our board.
         </h3>
         `,
@@ -181,7 +181,7 @@ export const Opportunities: Story = {
     slots: {
       leftColumn: {
         template: `
-        <h3 class="text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright lg:max-w-[572px]">
+        <h3 class="font-headings text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright lg:max-w-[572px]">
           Help abundance advocates succeed nationwide.
         </h3>
         `,
@@ -208,7 +208,7 @@ export const OpportunitiesWithActualContent: Story = {
     slots: {
       leftColumn: {
         template: `
-        <h3 class="text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright lg:max-w-[572px] mb-pi-15 lg:mb-pb-10">
+        <h3 class="font-headings text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright lg:max-w-[572px] mb-pi-15 lg:mb-pb-10">
           We're always on the lookout for talented policy experts to join our team.
         </h3>
         <p class="text-pi-body-3-bold text-charcoal-bright lg:max-w-[572px]">

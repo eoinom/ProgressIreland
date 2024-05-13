@@ -18,7 +18,7 @@
       class="hidden lg:block w-full"
     />
     <h1
-      class="text-pi-heading-4-large sm:text-pi-heading-3 md:text-pi-heading-2 lg:text-pi-heading-1 text-charcoal-bright max-w-[380px] sm:max-w-[520px] md:max-w-[610px] lg:max-w-[940px] pt-pi-40 pb-pi-15 lg:pt-pi-100 lg:pb-pi-50"
+      class="font-headings text-pi-heading-4-large sm:text-pi-heading-3 md:text-pi-heading-2 lg:text-pi-heading-1 text-charcoal-bright max-w-[380px] sm:max-w-[520px] md:max-w-[610px] lg:max-w-[940px] pt-pi-40 pb-pi-15 lg:pt-pi-100 lg:pb-pi-50"
     >
       {{ title }}
     </h1>
