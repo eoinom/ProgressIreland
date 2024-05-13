@@ -29,6 +29,22 @@ const { title } = Astro.props;
       type='image/svg+xml'
       href='/favicon.svg'
     />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      type='text/partytown'
+      async
+      src='https://www.googletagmanager.com/gtag/js?id=G-KVRR2BBBX7'
+    ></script>
+    <script type='text/partytown'>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-KVRR2BBBX7');
+    </script>
+
     <title>{title}</title>
   </head>
 
