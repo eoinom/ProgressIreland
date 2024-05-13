@@ -9,7 +9,7 @@ import Job from '@/components/content/Job.vue';
   <SectionHero title='Helping Ireland reach its potential.' />
   <SectionTwoColumn
     id='our-mission'
-    title='Mission Statement'
+    title='Mission'
   >
     <div slot='leftColumn'>
       <h3
@@ -33,19 +33,12 @@ import Job from '@/components/content/Job.vue';
 
   <SectionTwoColumn
     id='team'
-    title='Our Staff'
+    title='Team'
   >
-    <div slot='leftColumn'>
-      <h3
-        class='font-headings text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright'
-      >
-        Meet our team.
-      </h3>
-    </div>
     <div slot='rightColumn'>
       <Job
         client:load
-        title='Sean Keyes (Executive Director)'
+        title='Seán Keyes (Executive Director)'
       />
       <Job
         client:load
@@ -63,28 +56,17 @@ import Job from '@/components/content/Job.vue';
   </SectionTwoColumn>
 
   <SectionTwoColumn
-    id='board'
-    title='Our Board'
+    id='governance'
+    title='Governance'
   >
-    <div slot='leftColumn'>
-      <h3
-        class='font-headings text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright'
-      >
-        Meet our board.
-      </h3>
-    </div>
     <div slot='rightColumn'>
       <Job
         client:load
-        title='Fiona Cormican (Board Member)'
+        title='Fiona Cormican (Non-executive Director)'
       />
       <Job
         client:load
-        title='Donal de Buitleir (Board Member)'
-      />
-      <Job
-        client:load
-        title='TBC (Board Member)'
+        title='Donal de Buitleir (Non-executive Director)'
       />
     </div>
   </SectionTwoColumn>

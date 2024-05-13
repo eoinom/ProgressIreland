@@ -94,7 +94,7 @@ export const MissionStatement: Story = {
 
 export const MissionStatementWithActualContent: Story = {
   args: {
-    title: 'Mission Statement',
+    title: 'Mission',
   },
   parameters: {
     layout: 'padded',
@@ -136,7 +136,27 @@ export const MeetOurTeamWithActualContent: Story = {
       rightColumn: {
         components: { Job },
         template: `
-        <Job title="Sean Keyes (Executive Director)" />
+        <Job title="Seán Keyes (Executive Director)" />
+        <Job title="Seán O'Neill McPartlin (Director of Housing Policy)" />
+        <Job title="Luke Fehily (Director of Science and Innovation Policy)" />
+        <Job title="Fergus McCullough (Director of Operations)" />
+        `,
+      },
+    },
+  },
+};
+
+export const TeamWithActualContent: Story = {
+  args: {
+    title: 'Team',
+  },
+  parameters: {
+    layout: 'padded',
+    slots: {
+      rightColumn: {
+        components: { Job },
+        template: `
+        <Job title="Seán Keyes (Executive Director)" />
         <Job title="Seán O'Neill McPartlin (Director of Housing Policy)" />
         <Job title="Luke Fehily (Director of Science and Innovation Policy)" />
         <Job title="Fergus McCullough (Director of Operations)" />
@@ -166,6 +186,24 @@ export const MeetOurBoardWithActualContent: Story = {
         <Job title="Fiona Cormican (Board Member)" />
         <Job title="Donal de Buitleir (Board Member)" />
         <Job title="TBC (Board Member)" />
+        `,
+      },
+    },
+  },
+};
+
+export const GovernanceWithActualContent: Story = {
+  args: {
+    title: 'Governance',
+  },
+  parameters: {
+    layout: 'padded',
+    slots: {
+      rightColumn: {
+        components: { Job },
+        template: `
+        <Job title="Fiona Cormican (Non-executive Director)" />
+        <Job title="Donal de Buitleir (Non-executive Director)" />
         `,
       },
     },
