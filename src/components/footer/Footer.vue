@@ -51,7 +51,9 @@
           >Terms of Use</a
         >
         <a
-          href="/privacy-policy"
+          href="https://app.termly.io/document/privacy-policy/4c25752d-2130-4948-b323-7ba774e69bce"
+          target="_blank"
+          rel="noopener noreferrer"
           class="text-pi-body-6-bold lg:text-pi-body-5-bold text-charcoal-bright"
           >Privacy Policy</a
         >
