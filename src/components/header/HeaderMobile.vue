@@ -12,7 +12,7 @@
 
       <img
         v-show="!isMenuOpen"
-        src="burger-icon.svg"
+        src="/burger-icon.svg"
         alt="Navigation menu"
         class="h-[29px] z-50"
         @click.stop="isMenuOpen = true"
@@ -20,7 +20,7 @@
 
       <img
         v-show="isMenuOpen"
-        src="close-icon.svg"
+        src="/close-icon.svg"
         alt="Navigation menu"
         class="h-pi-35 z-50"
         @click.stop="isMenuOpen = false"
