@@ -8,10 +8,6 @@ const meta = {
     layout: 'padded',
   },
   tags: ['autodocs'],
-  args: {
-    type: 'text',
-    placeholder: 'Name',
-  },
 } satisfies Meta<typeof TextInput>;
 
 export default meta;

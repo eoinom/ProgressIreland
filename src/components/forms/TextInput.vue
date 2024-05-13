@@ -1,8 +1,7 @@
 <template>
   <input
-    v-bind="$attrs"
+    type="text"
     v-model="inputValue"
-    :placeholder="props.placeholder"
     @input="
       $emit(
         'update:modelValue',
@@ -18,14 +17,6 @@ import { ref } from 'vue';
 
 const props = defineProps({
   modelValue: {
-    type: String,
-    default: '',
-  },
-  type: {
-    type: String,
-    default: 'text',
-  },
-  placeholder: {
     type: String,
     default: '',
   },
