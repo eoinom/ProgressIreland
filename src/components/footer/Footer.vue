@@ -46,7 +46,9 @@
       />
       <div class="flex justify-between lg:space-x-2">
         <a
-          href="/terms-of-use"
+          href="https://app.termly.io/policy-viewer/policy.html?policyUUID=c003c10e-571c-4c3e-93fb-30b2b1187355"
+          target="_blank"
+          rel="noopener noreferrer"
           class="text-pi-body-6-bold lg:text-pi-body-5-bold text-charcoal-bright"
           >Terms of Use</a
         >
