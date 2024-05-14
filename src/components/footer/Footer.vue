@@ -28,14 +28,14 @@
         > -->
       </div>
 
-      <div class="flex flex-col w-full lg:w-1/2">
+      <!-- <div class="flex flex-col w-full lg:w-1/2">
         <h3
           class="font-headings text-pi-heading-4 lg:text-pi-heading-3 text-charcoal-bright mb-pi-10 lg:mb-7"
         >
           Get in touch with us
         </h3>
         <ContactForm />
-      </div>
+      </div> -->
     </div>
 
     <div class="flex flex-col lg:flex-row justify-between">
@@ -68,6 +68,6 @@
   </footer>
 </template>
 
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import ContactForm from '../forms/ContactForm.vue';
-</script>
+</script> -->
