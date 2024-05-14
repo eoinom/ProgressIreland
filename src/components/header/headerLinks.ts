@@ -4,7 +4,7 @@ export type HeaderLink = {
 };
 
 export const headerLinks: HeaderLink[] = [
-  { text: 'Our Mission', url: '#our-mission' },
+  { text: 'Mission', url: '#our-mission' },
   { text: 'Team', url: '#team' },
   { text: 'Governance', url: '#governance' },
   { text: 'Opportunities', url: '#opportunities' },
